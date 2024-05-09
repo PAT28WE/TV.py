@@ -1,0 +1,45 @@
+Python#1 program for TV Task
+
+#praent Class
+class TV:
+   #constructor
+
+    def __init__(self, brand, channel, price, inches,OnOff, volume):
+    self.brand = brand
+    self.channel = channel
+    self.price = price
+    self.inches = inches
+    self.OnOff = OnOff
+    self.volume = volume
+
+p1 = TV("Sony", "Suntv", "500000", "60","On", 15)
+
+print(p1.brand)
+print(p1.channel)
+print(p1.price)
+print(p1.inches)
+print(p1.OnOff)
+print(p1.volume)
+
+class MyClass:
+    def __init__(self, name=None):
+        if name is None:
+            print("Default channel should be 1")
+class Sound:            
+    def __init__(self, sound=None):
+        if sound is None:
+            print("Default sound should be 50")
+ 
+# Create an object of the class using the default constructor
+obj1 = MyClass()
+# Create an object of the class using the default constructor
+obj1 = Sound()
+OUTPUT:
+Sony
+Suntv
+500000
+60
+On
+15
+Default channel should be 1
+Default sound should be 50
